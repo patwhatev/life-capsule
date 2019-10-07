@@ -5,7 +5,7 @@ class Home extends Component {
     return (
       <div>
         <p>penis</p>
-        <img src={require('../src/42.jpg')} alt="" />
+        <img src={require('../src/img/PAINTINGS/valet/42.jpg')} alt="" />
       </div>
     );
   }
