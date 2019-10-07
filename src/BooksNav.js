@@ -31,7 +31,13 @@ const books = [
 ]
 
 class BooksNav extends Component {
+	constructor({match}) {
+		super();
+		this.match = this.props;
+	}
+
   render() {
+  	console.log(this.props)
     return (
         <HashRouter>
         <div>
@@ -43,9 +49,9 @@ class BooksNav extends Component {
   		    ))}
   		  </ul>
   		  <div className="sub-content">
-  		     {books.map(({ className, id, resources }) => (
-  		       <Route path={`/books/${id}`} component={className}/>
-  		     ))}
+  		     <Route path={`/books/rkr`} component={Rkr}/>
+  		     <Route path={`/books/pe18`} component={Pe18}/>
+
   		  </div>
         </div>
       </HashRouter>
