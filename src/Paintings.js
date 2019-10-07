@@ -5,7 +5,6 @@ class Paintings
   render() {
     return (
       <div>
-        <h2>GOT QUESTIONS?</h2>
         <img src={require('../src/img/korean/boots.JPEG')} alt="" />
       </div>
     );
