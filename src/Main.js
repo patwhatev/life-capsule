@@ -7,12 +7,12 @@ import {
   HashRouter
 } from "react-router-dom";
 import Home from "./Home";
-import Paintings from "./Paintings";
-import Paper from "./Paper";
-import Photographs from "./Photographs";
-import Video from "./Video";
-import Sculpture from "./Sculpture";
-import Books from "./Books";
+import Paintings from "./paintings/Paintings";
+import Paper from "./paper/Paper";
+import Photographs from "./photos/Photographs";
+import Video from "./video/Video";
+import Sculpture from "./sculpture/Sculpture";
+import Books from "./books/Books";
 
 class Main extends Component {
   render() {
