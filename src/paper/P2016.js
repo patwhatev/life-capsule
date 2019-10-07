@@ -1,15 +1,15 @@
 import React, { Component } from "react";
  
-class Heroin
+class P2016
  extends Component {
   render() {
     return (
       <div>
-        <h2>HEROIN</h2>
+        <h2>2016</h2>
       </div>
     );
   }
 }
  
-export default Heroin
+export default P2016
 ;

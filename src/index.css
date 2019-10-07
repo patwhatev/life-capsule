@@ -4,8 +4,11 @@ body {
   margin: 0;
 }
 h1, h2, p, ul, li {
-  font-family: sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 ul.header li {
   display: inline;
@@ -24,9 +27,25 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+
+.content li a {
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+.content li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
 .content {
   background-color: #FFF;
   padding: 20px;
+  text-align: center;
 }
 .content h2 {
   padding: 0;

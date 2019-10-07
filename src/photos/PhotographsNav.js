@@ -70,7 +70,7 @@ const paper = [
   }
 ]
 
-class PaperNav extends Component {
+class PhotographsNav extends Component {
 	constructor({match}) {
 		super();
 		this.match = this.props;
@@ -101,4 +101,4 @@ class PaperNav extends Component {
   }
 }
  
-export default PaperNav;
+export default PhotographsNav;

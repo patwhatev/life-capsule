@@ -22,18 +22,18 @@ class Main extends Component {
           <h1>HENRIALEXANDERLEVY</h1>
           <ul className="header">
             <li><NavLink to="/paintings">Paintings</NavLink></li>
-            <li><NavLink to="/worksonpaper">Works on paper</NavLink></li>
-            <li><NavLink to="/photographs">Photographs</NavLink></li>
-            <li><NavLink to="/video">Video</NavLink></li>
+            <li><NavLink to="/paper">Works on paper</NavLink></li>
+            <li><NavLink to="/photos">Photographs</NavLink></li>
+            <li><NavLink to="/videos">Video</NavLink></li>
             <li><NavLink to="/sculpture">Sculpture/Furniture</NavLink></li>
             <li><NavLink to="/books">Books/Zines</NavLink></li>
           </ul>
           <div className="content">
              <Route exact path="/" component={Home}/>
              <Route path="/paintings" component={Paintings}/>
-             <Route path="/worksonpaper" component={Paper}/>
-             <Route path="/photographs" component={Photographs}/>
-             <Route path="/video" component={Video}/>
+             <Route path="/paper" component={Paper}/>
+             <Route path="/photos" component={Photographs}/>
+             <Route path="/videos" component={Video}/>
              <Route path="/sculpture" component={Sculpture}/>
              <Route path="/books" component={Books}/>
           </div>
