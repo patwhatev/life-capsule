@@ -33,6 +33,16 @@ ul.header li a {
   margin: 0;
 }
 
+.sub-content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.sub-content h2 {
+  padding: 0;
+  margin: 0;
+}
+
+
 img {
   height: 100%;
   width: 100%;

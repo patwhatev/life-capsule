@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import {
   Route,
+  BrowserRouter as Router,
+  Link,
   NavLink,
   HashRouter
 } from "react-router-dom";
@@ -11,7 +13,6 @@ import Photographs from "./Photographs";
 import Video from "./Video";
 import Sculpture from "./Sculpture";
 import Books from "./Books";
-import Rkr from "./Rkr";
 
 class Main extends Component {
   render() {
@@ -35,7 +36,6 @@ class Main extends Component {
              <Route path="/video" component={Video}/>
              <Route path="/sculpture" component={Sculpture}/>
              <Route path="/books" component={Books}/>
-             <Route path="/rkr" component={Rkr}/>
           </div>
         </div>
       </HashRouter>
