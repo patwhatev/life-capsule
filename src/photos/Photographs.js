@@ -1,18 +1,16 @@
 import React, { Component } from "react";
- 
-class Paintings
+import PhotographsNav from "./PhotographsNav";
+
+class Photographs
  extends Component {
   render() {
     return (
       <div>
-        <h2>GOT QUESTIONS?</h2>
-        <p>The easiest thing to do is post on
-        our <a href="http://forum.kirupa.com">forums</a>.
-        </p>
+        <PhotographsNav/>
       </div>
     );
   }
 }
  
-export default Paintings
+export default Photographs
 ;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import BooksNav from "./BooksNav";
  
-class Paintings
+class Books
  extends Component {
 
   render() {
@@ -13,5 +13,5 @@ class Paintings
   }
 }
  
-export default Paintings
+export default Books
 ;

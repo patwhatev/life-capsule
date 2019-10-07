@@ -1,18 +1,17 @@
 import React, { Component } from "react";
+import SculptureNav from "./SculptureNav";
  
-class Paintings
+class Sculpture
  extends Component {
+
   render() {
     return (
       <div>
-        <h2>GOT QUESTIONS?</h2>
-        <p>The easiest thing to do is post on
-        our <a href="http://forum.kirupa.com">forums</a>.
-        </p>
+        <SculptureNav/>
       </div>
     );
   }
 }
  
-export default Paintings
+export default Sculpture
 ;
