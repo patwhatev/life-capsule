@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import BooksNav from "./BooksNav";
  
 class Paintings
  extends Component {
   render() {
     return (
       <div>
-        <BooksNav/>
-        <h2>WHAT DA</h2>
+        <img src={require('../src/img/korean/boots.JPEG')} alt="" />
       </div>
     );
   }
@@ -15,4 +13,3 @@ class Paintings
  
 export default Paintings
 ;
-
