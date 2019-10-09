@@ -27,7 +27,11 @@ const paper = [
     id: '2017',
     description: 'The content, all goes, right here, : )',
     resources: [
-      'https://miro.medium.com/max/10944/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg'
+      "https://static1.squarespace.com/static/5ad4d6c7a2772c84c876a433/5d9bfe1d891ec13e8f7d9642/5d9bfe2a7161583d7ba0f89a/1570504257722/16.jpg.png?format=1500w",
+      "https://static1.squarespace.com/static/5ad4d6c7a2772c84c876a433/5d9bfe1d891ec13e8f7d9642/5d9bfe29b3de004d53e534bf/1570504256923/11.jpg.png?format=1500w",
+      "https://static1.squarespace.com/static/5ad4d6c7a2772c84c876a433/5d9bfe1d891ec13e8f7d9642/5d9bfe1ee77d8a0f62506200/1570504243991/2.jpg.png?format=1500w",
+      "https://static1.squarespace.com/static/5ad4d6c7a2772c84c876a433/5d9bfe1d891ec13e8f7d9642/5d9bfe1d18af836bfce95bb2/1570504248053/17.jpg.png?format=1500w",
+      ""
     ]
   },
   {

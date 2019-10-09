@@ -17,7 +17,6 @@ const books = [
     id: 'rkr',
     description: 'The content, all goes, right here, : )',
     resources: [
-      'https://miro.medium.com/max/10944/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg'
     ]
   },
   {
