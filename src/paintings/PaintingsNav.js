@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import {
   Route,
-  BrowserRouter as Router,
-  Link,
   NavLink,
   HashRouter
 } from "react-router-dom";
@@ -15,29 +13,19 @@ const paintings = [
     name: 'Graphs',
     className: 'Graphs',
     id: 'graphs',
-    description: 'The content, all goes, right here, : )',
-    resources: [
-      "https://static1.squarespace.com/static/5ad4d6c7a2772c84c876a433/5d9bfe1d891ec13e8f7d9642/5d9bfe32ef7b8f2461e5165a/1570504257539/18.jpg.png?format=1500w",
-      ""
-    ]
+    description: 'The content, all goes, right here, : )'
   },
   {
     name: 'Valet',
     className: 'Valet',
     id: 'valet',
-    description: 'The content, all goes, right here, : )',
-    resources: [
-      'https://miro.medium.com/max/10944/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg'
-    ]
+    description: 'The content, all goes, right here, : )'
   },
   {
     name: 'Heroin',
     className: 'Heroin',
     id: 'heroin',
-    description: 'some other stuff',
-    resources: [
-      '../src/img/PAINTINGS/graphs/18.jpg'
-    ]
+    description: 'some other stuff'
   }
 ]
 

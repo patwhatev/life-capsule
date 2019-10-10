@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import {
   Route,
-  BrowserRouter as Router,
-  Link,
   NavLink,
   HashRouter
 } from "react-router-dom";

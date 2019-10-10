@@ -1,11 +1,14 @@
 import React, { Component } from "react";
- 
+
+const imgs = []
 class Metal
  extends Component {
   render() {
     return (
       <div>
-        <h2>HEROIN</h2>
+        {imgs.map(image => (
+        	<img src={image} alt="" />
+        ))}
       </div>
     );
   }
