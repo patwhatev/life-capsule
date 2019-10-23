@@ -28,6 +28,16 @@ ul.header li a {
   display: inline-block;
 }
 
+.content div {
+  width: 95%;
+}
+
+.content div img {
+  padding: 30px;
+  margin-top: 10%;
+  margin-left: 6%;
+}
+
 .content li a {
   color: #111;
   font-weight: bold;

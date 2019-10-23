@@ -16,6 +16,7 @@ class Main extends Component {
   render() {
     return (
         <HashRouter>
+        
         <div>
           <h1>HENRIALEXANDERLEVY</h1>
           <ul className="header">
