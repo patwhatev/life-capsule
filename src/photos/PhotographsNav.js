@@ -4,52 +4,28 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Eden from "./Eden";
-import Hollywood from "./Hollywood";
-import Korean from "./Korean";
-import Metal from "./Metal";
-import Perris from "./Perris";
-import Studio from "./Studio";
+import La from "./La";
+import St from "./St";
+import At from "./At";
 
 const paper = [
   {
-    name: 'eden',
-    className: 'Eden',
-    id: 'eden',
+    name: 'los angeles',
+    className: 'La',
+    id: 'la',
     description: 'The content, all goes, right here, : )'
   },
   {
-    name: 'hollywood',
-    className: 'Hollywood',
-    id: 'hollywood',
+    name: 'st. tropez',
+    className: 'St',
+    id: 'st',
     description: 'The content, all goes, right here, : )'
   },
   {
-    name: 'korean',
-    className: 'Korean',
-    id: 'korean',
+    name: 'austin, tx',
+    className: 'At',
+    id: 'at',
     description: 'The content, all goes, right here, : )'
-  },
-  {
-    name: 'metal',
-    className: 'Metal',
-    id: 'metal',
-    description: 'The content, all goes, right here, : )',
-    resources: [
-      'https://miro.medium.com/max/10944/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg'
-    ]
-  },
-  {
-    name: 'perris',
-    className: 'Perris',
-    id: 'perris',
-    description: 'The content, all goes, right here, : )',
-  },
-  {
-    name: 'studio',
-    className: 'Studio',
-    id: 'studio',
-    description: 'The content, all goes, right here, : )',
   }
 ]
 
@@ -71,12 +47,9 @@ class PhotographsNav extends Component {
   		    ))}
   		  </ul>
   		  <div className="sub-content">
-  		     <Route path={'/photos/eden'} component={Eden}/>
-  		     <Route path={'/photos/hollywood'} component={Hollywood}/>
-  		     <Route path={'/photos/korean'} component={Korean}/>
-  		     <Route path={'/photos/metal'} component={Metal}/>
-  		     <Route path={'/photos/perris'} component={Perris}/>
-  		     <Route path={'/photos/studio'} component={Studio}/>
+           <Route path={'/photos/la'} component={La}/>
+           <Route path={'/photos/st'} component={St}/>
+  		     <Route path={'/photos/at'} component={At}/>
   		  </div>
         </div>
       </HashRouter>
