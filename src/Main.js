@@ -23,7 +23,6 @@ class Main extends Component {
             <li><NavLink to="/paintings">Paintings</NavLink></li>
             <li><NavLink to="/paper">Works on paper</NavLink></li>
             <li><NavLink to="/photos">Photographs</NavLink></li>
-            <li><NavLink to="/videos">Video</NavLink></li>
             <li><NavLink to="/sculpture">Sculpture/Furniture</NavLink></li>
             <li><NavLink to="/books">Books/Zines</NavLink></li>
           </ul>
@@ -32,7 +31,6 @@ class Main extends Component {
              <Route path="/paintings" component={Paintings}/>
              <Route path="/paper" component={Paper}/>
              <Route path="/photos" component={Photographs}/>
-             <Route path="/videos" component={Video}/>
              <Route path="/sculpture" component={Sculpture}/>
              <Route path="/books" component={Books}/>
           </div>

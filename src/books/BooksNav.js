@@ -16,25 +16,25 @@ const books = [
     description: 'The content, all goes, right here, : )',
     resources: [
     ]
-  },
-  {
-    name: 'Printemps Ete 18',
-    className: 'Pe18',
-    id: 'pe18',
-    description: 'some other stuff',
-    resources: [
-      '../src/img/PAINTINGS/graphs/18.jpg'
-    ]
-  },
-  {
-    name: 'Poesie',
-    className: 'Poesie',
-    id: 'poesie',
-    description: 'some other stuff',
-    resources: [
-      '../src/img/PAINTINGS/graphs/18.jpg'
-    ]
   }
+  // {
+  //   name: 'Printemps Ete 18',
+  //   className: 'Pe18',
+  //   id: 'pe18',
+  //   description: 'some other stuff',
+  //   resources: [
+  //     '../src/img/PAINTINGS/graphs/18.jpg'
+  //   ]
+  // },
+  // {
+  //   name: 'Poesie',
+  //   className: 'Poesie',
+  //   id: 'poesie',
+  //   description: 'some other stuff',
+  //   resources: [
+  //     '../src/img/PAINTINGS/graphs/18.jpg'
+  //   ]
+  // }
 ]
 
 class BooksNav extends Component {
@@ -56,8 +56,6 @@ class BooksNav extends Component {
   		  </ul>
   		  <div className="sub-content">
   		     <Route path={'/books/rkr'} component={Rkr}/>
-  		     <Route path={'/books/pe18'} component={Pe18}/>
-  		     <Route path={'/books/poesie'} component={Poesie}/>
   		  </div>
         </div>
       </HashRouter>
