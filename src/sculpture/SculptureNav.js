@@ -4,6 +4,7 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
+import Sculpture from "./Sculpture";
 import Chaise from "./Chaise";
 
 const sculptures = [
@@ -38,7 +39,7 @@ class PaperNav extends Component {
   		    ))}
   		  </ul>
   		  <div className="sub-content">
-  		     <Route path={'/sculpture/chaise'} component={Chaise}/>
+  		     <Route exact path={'/#/sculpture/chaise'} component={Chaise}/>
   		  </div>
         </div>
       </HashRouter>

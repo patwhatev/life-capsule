@@ -55,7 +55,7 @@ class BooksNav extends Component {
   		    ))}
   		  </ul>
   		  <div className="sub-content">
-  		     <Route path={'/books/rkr'} component={Rkr}/>
+  		     <Route exact path={'/#/books/rkr'} component={Rkr}/>
   		  </div>
         </div>
       </HashRouter>
