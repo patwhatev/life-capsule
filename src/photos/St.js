@@ -8,7 +8,7 @@ import Eden from "./Eden";
 
 const paper = [
   {
-    name: 'eden rock',
+    name: 'eden roc',
     className: 'Eden',
     id: 'eden',
     description: 'The content, all goes, right here, : )'
