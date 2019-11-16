@@ -7,6 +7,7 @@ import {
 import La from "./La";
 import St from "./St";
 import At from "./At";
+import Paris from "./Paris";
 
 const paper = [
   {
@@ -25,6 +26,12 @@ const paper = [
     name: 'austin, tx',
     className: 'At',
     id: 'at',
+    description: 'The content, all goes, right here, : )'
+  },
+  {
+    name: 'paris',
+    className: 'Paris',
+    id: 'paris',
     description: 'The content, all goes, right here, : )'
   }
 ]
@@ -49,7 +56,8 @@ class PhotographsNav extends Component {
   		  <div className="sub-content">
            <Route path={'/photos/la'} component={La}/>
            <Route path={'/photos/st'} component={St}/>
-  		     <Route path={'/photos/at'} component={At}/>
+           <Route path={'/photos/at'} component={At}/>
+           <Route path={'/photos/paris'} component={Paris}/>
   		  </div>
         </div>
       </HashRouter>
