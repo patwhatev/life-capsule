@@ -5,8 +5,6 @@ import {
   HashRouter
 } from "react-router-dom";
 import Rkr from "./Rkr";
-import Pe18 from "./Pe18";
-import Poesie from "./Poesie";
 
 const books = [
   {
@@ -17,24 +15,6 @@ const books = [
     resources: [
     ]
   }
-  // {
-  //   name: 'Printemps Ete 18',
-  //   className: 'Pe18',
-  //   id: 'pe18',
-  //   description: 'some other stuff',
-  //   resources: [
-  //     '../src/img/PAINTINGS/graphs/18.jpg'
-  //   ]
-  // },
-  // {
-  //   name: 'Poesie',
-  //   className: 'Poesie',
-  //   id: 'poesie',
-  //   description: 'some other stuff',
-  //   resources: [
-  //     '../src/img/PAINTINGS/graphs/18.jpg'
-  //   ]
-  // }
 ]
 
 class BooksNav extends Component {
