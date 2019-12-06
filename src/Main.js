@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./Home";
 import Paintings from "./paintings/Paintings";
-import Paper from "./paper/Paper";
+import Music from "./music/Music";
 import Photographs from "./photos/Photographs";
 import Video from "./video/Video";
 import Sculpture from "./sculpture/Sculpture";
@@ -36,7 +36,7 @@ class Main extends Component {
           <h1><a href="/#">patrickroberteverman</a></h1>
           <ul className="header">
             <li><NavLink to="/paintings">Paintings</NavLink></li>
-            <li><NavLink to="/paper">Music</NavLink></li>
+            <li><NavLink to="/music">Music</NavLink></li>
             <li><NavLink to="/photos">Photographs</NavLink></li>
             <li><NavLink to="/video">Video</NavLink></li>
             <li><NavLink to="/writing">Writing</NavLink></li>
@@ -44,7 +44,7 @@ class Main extends Component {
           <div className="content">
              <Route exact path="/" component={Home}/>
              <Route path="/paintings" component={Paintings}/>
-             <Route path="/paper" component={Paper}/>
+             <Route path="/music" component={Music}/>
              <Route path="/photos" component={Photographs}/>
              <Route path="/video" component={Video}/>
              <Route path="/writing" component={Writing}/>

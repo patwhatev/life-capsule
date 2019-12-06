@@ -25,8 +25,10 @@ h1, h2, p, ul, li {
 	display: block;
 }
 
-.subNav li {
-	color: grey;
+.subNav li a {
+  color: rgb(169,0,0);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 ul.header li {
@@ -95,11 +97,7 @@ h1 a:hover {
   display: none;
 }
 
-.subNav li a {
-  color: #eee;
-  font-weight: bold;
-  text-decoration: none;
-}
+
 
 .content li {
   list-style-type: none;
@@ -133,7 +131,15 @@ img {
 
 /*HOME PAGE*/
 .hometrack, .hometext, .homephoto {
-	padding: 69px;
+	padding: 169px 0;
+}
+
+.hometext {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	right: 0;
+	font-size: .8em;
 }
 
 

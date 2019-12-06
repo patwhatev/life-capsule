@@ -11,25 +11,31 @@ import P2019 from "./2019";
 
 const music = [
   {
-    name: '2016',
+    name: 'Bluebird',
     className: 'P2016',
     id: '2016',
     description: 'The content, all goes, right here, : )'
   },
   {
-    name: '2017',
+    name: 'Catcher',
     className: 'P2017',
     id: '2017',
     description: 'The content, all goes, right here, : )'
   },
   {
-    name: '2018',
+    name: 'Horses',
     className: 'P2018',
     id: '2018',
     description: 'The content, all goes, right here, : )'
   },
   {
-    name: '2019',
+    name: 'Bronson',
+    className: 'P2019',
+    id: '2019',
+    description: 'some other stuff'
+  },
+  {
+    name: 'Why7Not',
     className: 'P2019',
     id: '2019',
     description: 'some other stuff'
