@@ -9,7 +9,7 @@ import P2017 from "./2017";
 import P2018 from "./2018";
 import P2019 from "./2019";
 
-const paper = [
+const music = [
   {
     name: '2016',
     className: 'P2016',
@@ -36,7 +36,7 @@ const paper = [
   }
 ]
 
-class PaperNav extends Component {
+class MusicNav extends Component {
 	constructor({match}) {
 		super();
 		this.match = this.props;
@@ -46,18 +46,20 @@ class PaperNav extends Component {
     return (
         <HashRouter>
         <div>
-          <ul>
-  		    {paper.map(({ name, id }) => (
-  		      <li key={id}>
-  		        <NavLink to={`/paper/${id}`}>{name}</NavLink>
-  		      </li>
-  		    ))}
-  		  </ul>
+	        <div className="subNav">
+	          <ul>
+	  		    {music.map(({ name, id }) => (
+	  		      <li key={id}>
+	  		        <NavLink to={`/music/${id}`}>{name}</NavLink>
+	  		      </li>
+	  		    ))}
+	  		  </ul>
+	  		  </div>
   		  <div className="sub-content">
-  		     <Route path={'/paper/2016'} component={P2016}/>
-  		     <Route path={'/paper/2017'} component={P2017}/>
-  		     <Route path={'/paper/2018'} component={P2018}/>
-  		     <Route path={'/paper/2019'} component={P2019}/>
+  		     <Route path={'/music/2016'} component={P2016}/>
+  		     <Route path={'/music/2017'} component={P2017}/>
+  		     <Route path={'/music/2018'} component={P2018}/>
+  		     <Route path={'/music/2019'} component={P2019}/>
   		  </div>
         </div>
       </HashRouter>
@@ -65,4 +67,4 @@ class PaperNav extends Component {
   }
 }
  
-export default PaperNav;
+export default MusicNav;

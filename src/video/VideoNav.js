@@ -58,13 +58,15 @@ class VideoNav extends Component {
     return (
         <HashRouter>
         <div>
-          <ul>
-  		    {videos.map(({ name, id }) => (
-  		      <li key={id}>
-  		        <NavLink to={`/videos/${id}`}>{name}</NavLink>
-  		      </li>
-  		    ))}
-  		  </ul>
+        	<div className="subNav">
+	          <ul>
+	  		    {videos.map(({ name, id }) => (
+	  		      <li key={id}>
+	  		        <NavLink to={`/videos/${id}`}>{name}</NavLink>
+	  		      </li>
+	  		    ))}
+	  		  </ul>
+  		  </div>
   		  <div className="sub-content">
   		     <Route path={'/videos/aluminum'} component={Aluminum}/>
   		     <Route path={'/videos/government'} component={Government}/>

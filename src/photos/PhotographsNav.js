@@ -46,13 +46,15 @@ class PhotographsNav extends Component {
     return (
         <HashRouter>
         <div>
-          <ul>
-  		    {paper.map(({ name, id }) => (
-  		      <li key={id}>
-  		        <NavLink to={`/photos/${id}`}>{name}</NavLink>
-  		      </li>
-  		    ))}
-  		  </ul>
+        	<div className="subNav">
+	          <ul>
+	  		    {paper.map(({ name, id }) => (
+	  		      <li key={id}>
+	  		        <NavLink to={`/photos/${id}`}>{name}</NavLink>
+	  		      </li>
+	  		    ))}
+	  		  </ul>
+	  		</div>
   		  <div className="sub-content">
            <Route path={'/photos/la'} component={La}/>
            <Route path={'/photos/st'} component={St}/>

@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
-import BooksNav from "./BooksNav";
+import WritingNav from "./WritingNav";
 
  const imgs = [
   'https://static1.squarespace.com/static/5ad4d6c7a2772c84c876a433/5c5f8d154785d396610c3b07/5c5f8d326e9a7f5815fc0f1c/1563547665165/henr260-001.tif.png?format=1000w',
@@ -10,12 +10,12 @@ import BooksNav from "./BooksNav";
   "https://static1.squarespace.com/static/5ad4d6c7a2772c84c876a433/5c5f8d154785d396610c3b07/5c5f8d45e5e5f0cc9007567e/1563547665168/henr260-022.tif.png?format=1000w",
  ]
  
-class Books
+class Writing
  extends Component {
   render() {
     return (
       <div className="content">
-        <BooksNav/>
+        <WritingNav/>
         <Carousel>
           {imgs.map(image => (
             <Carousel.Item>
@@ -28,5 +28,5 @@ class Books
   }
 }
  
-export default Books
+export default Writing
 ;

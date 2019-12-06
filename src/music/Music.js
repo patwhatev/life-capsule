@@ -1,16 +1,16 @@
 import React, { Component } from "react";
- 
-class Rkr
+import MusicNav from "./MusicNav";
+
+class Music
  extends Component {
   render() {
     return (
       <div>
-        <h2>PE18</h2>
-        <img src={require('../src/img/Studio/IMG_3915.jpg')} alt="" />
+        <MusicNav/>
       </div>
     );
   }
 }
  
-export default Rkr
+export default Music
 ;

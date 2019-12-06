@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Rkr from "./Rkr";
 
-const books = [
+const writing = [
   {
     name: 'Reverse Keith Richards',
     className: 'Rkr',
@@ -17,7 +17,7 @@ const books = [
   }
 ]
 
-class BooksNav extends Component {
+class WritingNav extends Component {
 	constructor({match}) {
 		super();
 		this.match = this.props;
@@ -28,14 +28,14 @@ class BooksNav extends Component {
         <HashRouter>
         <div>
           <ul>
-  		    {books.map(({ name, id }) => (
+  		    {writing.map(({ name, id }) => (
   		      <li key={id}>
-  		        <NavLink to={`/books/${id}`}>{name}</NavLink>
+  		        <NavLink to={`/writing/${id}`}>{name}</NavLink>
   		      </li>
   		    ))}
   		  </ul>
   		  <div className="sub-content">
-  		     <Route exact path={'/#/books/rkr'} component={Rkr}/>
+  		     <Route exact path={'/#/writing/rkr'} component={Rkr}/>
   		  </div>
         </div>
       </HashRouter>
@@ -43,4 +43,4 @@ class BooksNav extends Component {
   }
 }
  
-export default BooksNav;
+export default WritingNav;

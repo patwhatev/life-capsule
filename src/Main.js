@@ -10,30 +10,44 @@ import Paper from "./paper/Paper";
 import Photographs from "./photos/Photographs";
 import Video from "./video/Video";
 import Sculpture from "./sculpture/Sculpture";
-import Books from "./books/Books";
+import Writing from "./writing/Writing";
 
 class Main extends Component {
+  state = {
+    v: '0'
+  }
+
+  listenScrollEvent = e => {
+    this.setState({v: window.scrollY});
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+
   render() {
+  let scrollColor = `rgb(${this.state.v *.06}, 0, 0)`;
+
     return (
         <HashRouter>
-        
-        <div>
+
+        <div className="nav" style={{background: scrollColor}}>
           <h1></h1>
-          <h1><a href="/#">HENRIALEXANDERLEVY</a></h1>
+          <h1><a href="/#">patrickroberteverman</a></h1>
           <ul className="header">
             <li><NavLink to="/paintings">Paintings</NavLink></li>
-            <li><NavLink to="/paper">Works on paper</NavLink></li>
+            <li><NavLink to="/paper">Music</NavLink></li>
             <li><NavLink to="/photos">Photographs</NavLink></li>
-            <li><NavLink to="/sculpture">Sculpture/Furniture</NavLink></li>
-            <li><NavLink to="/books">Books/Zines</NavLink></li>
+            <li><NavLink to="/video">Video</NavLink></li>
+            <li><NavLink to="/writing">Writing</NavLink></li>
           </ul>
           <div className="content">
              <Route exact path="/" component={Home}/>
              <Route path="/paintings" component={Paintings}/>
              <Route path="/paper" component={Paper}/>
              <Route path="/photos" component={Photographs}/>
-             <Route path="/sculpture" component={Sculpture}/>
-             <Route path="/books" component={Books}/>
+             <Route path="/video" component={Video}/>
+             <Route path="/writing" component={Writing}/>
           </div>
         </div>
       </HashRouter>

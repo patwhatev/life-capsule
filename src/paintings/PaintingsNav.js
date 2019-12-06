@@ -39,13 +39,15 @@ class PaintingsNav extends Component {
     return (
         <HashRouter>
         <div>
-          <ul>
-  		    {paintings.map(({ name, id }) => (
-  		      <li key={id}>
-  		        <NavLink to={`/paintings/${id}`}>{name}</NavLink>
-  		      </li>
-  		    ))}
-  		  </ul>
+        	<div className="subNav">
+        		<ul>
+	  		    {paintings.map(({ name, id }) => (
+	  		      <li key={id}>
+	  		        <NavLink to={`/paintings/${id}`}>{name}</NavLink>
+	  		      </li>
+	  		    ))}
+	  		  </ul>
+        	</div>
   		  <div className="sub-content">
   		     <Route path={'/paintings/graphs'} component={Graphs}/>
   		     <Route path={'/paintings/valet'} component={Valet}/>
