@@ -66,7 +66,7 @@ const albums = [
                         \
                         After that I did some light yoga, first time in a long time and it was very grounding.\
                         \
-                        I felt amazing.\
+                        I felt good.\
                         \
                         After that we went to coyote ugly from the movies.\
                         \
@@ -100,7 +100,6 @@ const albums = [
                         \
                         side note: imagining a series about 90s/00s LARPers; what if everyone else stayed contemporary, is there an unblemished replica of the era living today (like the mullet man)? are they walking down orchard ave carrying a duo-shock cd player wearing a tracksuit wearing a high top watching the sopranos wearing DCs playing Tony Hawk’s Pro Skater 2 (GTA III), all unironically, purely because they believe in that er\a\
                         \
-                        idea: a 00s larper magazine that is the exact same style as Seventeen Magazine from the 200s but the magazine is called Twenty seven magazine\
                     ", "dream\
                         chinese food \
                         dog \
@@ -137,7 +136,7 @@ const albums = [
                         i went to this party\
                         justice was playing\
                         it was a kegger\
-                        i spit in this girls drink (i was nihil-punk at the time) \
+                        i spit in this girls drink\
                         someone gave me a ride somewhere\
                         i got out and slammed the car door \
                         the lights were black and yellow\
