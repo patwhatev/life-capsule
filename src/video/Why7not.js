@@ -14,7 +14,7 @@ class Bronson
  extends Component {
   render() {
     return (
-      <div>
+      <div className="gallery">
           {albums.map(image => (
             <iframe src={image} width="340" height="191" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           ))}         

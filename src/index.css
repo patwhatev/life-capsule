@@ -160,5 +160,13 @@ img {
 
 /*MOBILE SHIT*/
 @media only screen and (max-width: 600px) {
-  
+  .subNav {
+    left: 37%;
+  }
+
+  .gallery {
+    margin-top: 170px;
+  }
+
+
 }

@@ -6,7 +6,6 @@ const albums = [
                       "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9e18d4078151fc586849/1575722530981/16640001.JPG?format=1500w",
                       "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9e197ace79162d12648f/1575722533431/16640004.JPG?format=1500w",
                       "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9e21ae6aff2a4b1aa7c0/1575722539240/16640006.JPG?format=1500w",
-                      "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9e23ce1e084cec69c016/1575722540185/16640007.JPG?format=1500w"  
                     ]
 class Bronson
  extends Component {

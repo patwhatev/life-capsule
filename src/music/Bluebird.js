@@ -12,7 +12,7 @@ class P2016
  extends Component {
   render() {
     return (
-      <div>
+      <div className="gallery">
           {albums.map(image => (
             <iframe border="0" width="195px" height="387px" src={image} seamless><a href="http://bluebird-burner.bandcamp.com/album/ifonlyif">ifonlyif by bluebird</a></iframe>
           ))}         

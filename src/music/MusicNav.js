@@ -9,38 +9,40 @@ import Catcher from "./Catcher";
 import Horses from "./Horses";
 import Bronson from "./Bronson";
 import Why7Not from "./Why7Not";
+import Patwhatev from "./Patwhatev";
 
 const music = [
   {
-    name: 'Bluebird',
-    className: 'Bluebird',
-    id: 'Bluebird',
-    description: 'The content, all goes, right here, : )'
-  },
-  {
-    name: 'Catcher',
-    className: 'Catcher',
-    id: 'Catcher',
-    description: 'The content, all goes, right here, : )'
-  },
-  {
-    name: 'Horses',
-    className: 'Horses',
-    id: 'Horses',
-    description: 'The content, all goes, right here, : )'
-  },
-  {
-    name: 'Bronson',
-    className: 'Bronson',
-    id: 'Bronson',
-    description: 'some other stuff'
+    name: 'Patwhatev',
+    className: 'Patwhatev',
+    id: 'Patwhatev',
   },
   {
     name: 'Why7Not',
     className: 'Why7Not',
     id: 'Why7Not',
-    description: 'some other stuff'
-  }
+  },
+  {
+    name: 'Bluebird',
+    className: 'Bluebird',
+    id: 'Bluebird',
+  },
+  {
+    name: 'Bronson',
+    className: 'Bronson',
+    id: 'Bronson',
+  },
+  {
+    name: 'Catcher',
+    className: 'Catcher',
+    id: 'Catcher',
+  },
+  {
+    name: 'Horses',
+    className: 'Horses',
+    id: 'Horses',
+  },
+  
 ]
 
 class MusicNav extends Component {
@@ -63,7 +65,8 @@ class MusicNav extends Component {
 	  		  </ul>
 	  		  </div>
   		  <div className="sub-content">
-  		     <Route path={'/music/bluebird'} component={Bluebird}/>
+           <Route path={'/music/patwhatev'} component={Patwhatev}/>
+           <Route path={'/music/bluebird'} component={Bluebird}/>
   		     <Route path={'/music/catcher'} component={Catcher}/>
   		     <Route path={'/music/horses'} component={Horses}/>
            <Route path={'/music/bronson'} component={Bronson}/>
