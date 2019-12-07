@@ -14,10 +14,6 @@ class Home extends Component {
       	<div className="homephoto">
         <img src={posts.test.photos[0]} alt="" />
       	</div>
-
-      	<div className="hometrack">
-			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src={posts.test.song}></iframe>
-      	</div>
       </div>
     );
   }
