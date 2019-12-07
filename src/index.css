@@ -132,11 +132,11 @@ img {
 /*HOME PAGE*/
 .hometrack, .hometext, .homephoto {
 	padding: 169px 0;
+  margin: auto;
 }
 
 .hometext {
 	width: 50%;
-	margin: auto;
 	text-align: center;
 	right: 0;
 	font-size: .8em;
@@ -150,6 +150,10 @@ img {
   width: 50%;
   margin: auto;
   padding: 90px 0;
+}
+
+.hometrack {
+  width: 50%;
 }
 
 

@@ -12,7 +12,7 @@ class Home extends Component {
       	</div>
 
       	<div className="homephoto">
-			<a data-flickr-embed="true" href="https://www.flickr.com/photos/181921471@N08/albums/72157712088284866" title="LC 2020"><img src="https://live.staticflickr.com/65535/48030360382_b530bd5e11_o.jpg" width="212" height="504" alt="LC 2020"></img></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <img src={posts.test.photos[0]} alt="" />
       	</div>
 
       	<div className="hometrack">
