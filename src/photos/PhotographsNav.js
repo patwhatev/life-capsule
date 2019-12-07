@@ -4,35 +4,31 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import La from "./La";
-import St from "./St";
-import At from "./At";
+import P2017 from "./P2017";
+import P2018 from "./P2018";
+import P2019 from "./P2019";
 import Paris from "./Paris";
 
 const paper = [
   {
-    name: 'los angeles',
-    className: 'La',
-    id: 'la',
-    description: 'The content, all goes, right here, : )'
+    name: '2017',
+    className: 'P2017',
+    id: '2017'
   },
   {
-    name: 'st. tropez',
-    className: 'St',
-    id: 'st',
-    description: 'The content, all goes, right here, : )'
+    name: '2018',
+    className: 'P2018',
+    id: '2018'
   },
   {
-    name: 'austin, tx',
-    className: 'At',
-    id: 'at',
-    description: 'The content, all goes, right here, : )'
+    name: '2019',
+    className: 'P2019',
+    id: '2019'
   },
   {
-    name: 'paris',
+    name: 'tv',
     className: 'Paris',
-    id: 'paris',
-    description: 'The content, all goes, right here, : )'
+    id: 'paris'
   }
 ]
 
@@ -56,9 +52,9 @@ class PhotographsNav extends Component {
 	  		  </ul>
 	  		</div>
   		  <div className="sub-content">
-           <Route path={'/photos/la'} component={La}/>
-           <Route path={'/photos/st'} component={St}/>
-           <Route path={'/photos/at'} component={At}/>
+           <Route path={'/photos/2017'} component={P2017}/>
+           <Route path={'/photos/2018'} component={P2018}/>
+           <Route path={'/photos/2019'} component={P2019}/>
            <Route path={'/photos/paris'} component={Paris}/>
   		  </div>
         </div>

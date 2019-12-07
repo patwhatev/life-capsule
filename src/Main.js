@@ -5,7 +5,6 @@ import {
   HashRouter
 } from "react-router-dom";
 import Home from "./Home";
-import Paintings from "./paintings/Paintings";
 import Music from "./music/Music";
 import Photographs from "./photos/Photographs";
 import Video from "./video/Video";
@@ -35,7 +34,6 @@ class Main extends Component {
           <h1></h1>
           <h1><a href="/#">patrickroberteverman</a></h1>
           <ul className="header">
-            <li><NavLink to="/paintings">Paintings</NavLink></li>
             <li><NavLink to="/music">Music</NavLink></li>
             <li><NavLink to="/photos">Photographs</NavLink></li>
             <li><NavLink to="/video">Video</NavLink></li>
@@ -43,7 +41,6 @@ class Main extends Component {
           </ul>
           <div className="content">
              <Route exact path="/" component={Home}/>
-             <Route path="/paintings" component={Paintings}/>
              <Route path="/music" component={Music}/>
              <Route path="/photos" component={Photographs}/>
              <Route path="/video" component={Video}/>

@@ -4,43 +4,23 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Aluminum from "./Aluminum";
-import Government from "./Government";
-import Paris from "./Paris";
-import Stokholm from "./Stokholm";
+import Skateboarding from "./Skateboarding";
+import Why7not from "./Why7not";
 
 const videos = [
   {
-    name: 'Aluminum Tastes Like Fear Trailer',
-    className: 'Aluminum',
-    id: 'aluminum',
+    name: 'skateboarding',
+    className: 'Skateboarding',
+    id: 'skateboarding',
     description: 'The content, all goes, right here, : )',
     resources: [
       'https://miro.medium.com/max/10944/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg'
     ]
   },
   {
-    name: 'Government',
-    className: 'Government',
-    id: 'government',
-    description: 'The content, all goes, right here, : )',
-    resources: [
-      'https://miro.medium.com/max/10944/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg'
-    ]
-  },
-  {
-    name: 'Paris',
-    className: 'Paris',
-    id: 'paris',
-    description: 'The content, all goes, right here, : )',
-    resources: [
-      'https://miro.medium.com/max/10944/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg'
-    ]
-  },
-  {
-    name: 'Stokholm',
-    className: 'Stokholm',
-    id: 'stokholm',
+    name: 'why7not',
+    className: 'Why7not',
+    id: 'why7not',
     description: 'The content, all goes, right here, : )',
     resources: [
       'https://miro.medium.com/max/10944/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg'
@@ -62,16 +42,14 @@ class VideoNav extends Component {
 	          <ul>
 	  		    {videos.map(({ name, id }) => (
 	  		      <li key={id}>
-	  		        <NavLink to={`/videos/${id}`}>{name}</NavLink>
+	  		        <NavLink to={`/video/${id}`}>{name}</NavLink>
 	  		      </li>
 	  		    ))}
 	  		  </ul>
   		  </div>
   		  <div className="sub-content">
-  		     <Route path={'/videos/aluminum'} component={Aluminum}/>
-  		     <Route path={'/videos/government'} component={Government}/>
-  		     <Route path={'/videos/paris'} component={Paris}/>
-  		     <Route path={'/videos/stokholm'} component={Stokholm}/>
+  		     <Route path={'/video/skateboarding'} component={Skateboarding}/>
+  		     <Route path={'/video/why7not'} component={Why7not}/>
   		  </div>
         </div>
       </HashRouter>

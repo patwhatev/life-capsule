@@ -4,40 +4,41 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import P2016 from "./P2016";
-import P2017 from "./2017";
-import P2018 from "./2018";
-import P2019 from "./2019";
+import Bluebird from "./Bluebird";
+import Catcher from "./Catcher";
+import Horses from "./Horses";
+import Bronson from "./Bronson";
+import Why7Not from "./Why7Not";
 
 const music = [
   {
     name: 'Bluebird',
-    className: 'P2016',
-    id: '2016',
+    className: 'Bluebird',
+    id: 'Bluebird',
     description: 'The content, all goes, right here, : )'
   },
   {
     name: 'Catcher',
-    className: 'P2017',
-    id: '2017',
+    className: 'Catcher',
+    id: 'Catcher',
     description: 'The content, all goes, right here, : )'
   },
   {
     name: 'Horses',
-    className: 'P2018',
-    id: '2018',
+    className: 'Horses',
+    id: 'Horses',
     description: 'The content, all goes, right here, : )'
   },
   {
     name: 'Bronson',
-    className: 'P2019',
-    id: '2019',
+    className: 'Bronson',
+    id: 'Bronson',
     description: 'some other stuff'
   },
   {
     name: 'Why7Not',
-    className: 'P2019',
-    id: '2019',
+    className: 'Why7Not',
+    id: 'Why7Not',
     description: 'some other stuff'
   }
 ]
@@ -62,10 +63,11 @@ class MusicNav extends Component {
 	  		  </ul>
 	  		  </div>
   		  <div className="sub-content">
-  		     <Route path={'/music/2016'} component={P2016}/>
-  		     <Route path={'/music/2017'} component={P2017}/>
-  		     <Route path={'/music/2018'} component={P2018}/>
-  		     <Route path={'/music/2019'} component={P2019}/>
+  		     <Route path={'/music/bluebird'} component={Bluebird}/>
+  		     <Route path={'/music/catcher'} component={Catcher}/>
+  		     <Route path={'/music/horses'} component={Horses}/>
+           <Route path={'/music/bronson'} component={Bronson}/>
+           <Route path={'/music/why7not'} component={Why7Not}/>
   		  </div>
         </div>
       </HashRouter>

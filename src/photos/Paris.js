@@ -1,44 +1,25 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
-import Louise from "./Louise";
 
-const paper = [
-  {
-    name: 'louise',
-    className: 'Louise',
-    id: 'louise',
-    description: 'The content, all goes, right here, : )'
-  }
-]
-
-class PhotographsNav extends Component {
-  constructor({match}) {
-    super();
-    this.match = this.props;
-  }
-
+const albums = [
+                  "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9c7dae6aff2a4b1a9069/1575722414243/1.jpg?format=1500w",
+                  "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9c2f48db126bf4f0bce6/1575722413955/dddddd.jpg?format=1500w",
+                  "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9c7fce1e084cec69aa2c/1575722413974/7.jpg?format=1500w",
+                  "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9c8ace1e084cec69aae9/1575722414136/aa.jpg?format=1500w",
+                  "https://static1.squarespace.com/static/53667a41e4b0e77173cb3dd1/5deb1864ae6aff2a4b140573/5deb9c7dce1e084cec69aa28/1575722413615/4.jpg?format=1500w",
+                    ]
+class Bronson
+ extends Component {
   render() {
     return (
-        <HashRouter>
-        <div>
-          <ul>
-          {paper.map(({ name, id }) => (
-            <li key={id}>
-              <NavLink to={`/photos/paris/${id}`}>{name}</NavLink>
-            </li>
-          ))}
-        </ul>
-        <div className="sub-content">
-           <Route path={'/photos/paris/louise'} component={Louise}/>
-        </div>
-        </div>
-      </HashRouter>
+      <div className="gallery">
+          {albums.map(image => (
+            <img src={image} alt="" />
+          ))}         
+      </div>
     );
   }
 }
  
-export default PhotographsNav;
+export default Bronson
+;
