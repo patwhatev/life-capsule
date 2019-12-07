@@ -142,7 +142,7 @@ img {
 	font-size: .8em;
 }
 
-.gallery img {
+.gallery img, gallery iframe {
   padding-bottom: 80px;
 }
 
@@ -156,7 +156,13 @@ img {
   width: 50%;
 }
 
-
+.gallery iframe {
+  margin-top: 190px;
+  display: block;
+  padding-bottom: 40px;
+  border: none;
+  margin: auto;
+}
 
 /*MOBILE SHIT*/
 @media only screen and (max-width: 600px) {
