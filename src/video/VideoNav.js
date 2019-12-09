@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import Skateboarding from "./Skateboarding";
 import Why7not from "./Why7not";
+import VideoWelcome from "./VideoWelcome";
+
 
 const videos = [
   {
@@ -48,6 +50,7 @@ class VideoNav extends Component {
 	  		  </ul>
   		  </div>
   		  <div className="sub-content">
+  		  	 <Route exact path="/video" component={VideoWelcome}/>
   		     <Route path={'/video/skateboarding'} component={Skateboarding}/>
   		     <Route path={'/video/why7not'} component={Why7not}/>
   		  </div>
