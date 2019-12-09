@@ -168,9 +168,8 @@ img {
 }
 
 .gallery-gif img{
-  max-width: 300px;
+  max-width:800px;
   padding: 30px;
-  position: relative;
 }
 
 /*MOBILE SHIT*/
