@@ -5,9 +5,7 @@ class Video
  extends Component {
   render() {
     return (
-    	<React.Fragment>
         <VideoNav/>
-        </React.Fragment>
     );
   }
 }
