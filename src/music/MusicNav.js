@@ -10,8 +10,14 @@ import Horses from "./Horses";
 import Bronson from "./Bronson";
 import Why7Not from "./Why7Not";
 import Patwhatev from "./Patwhatev";
+import PatrickEverman from "./PatrickEverman";
 
 const music = [
+  {
+    name: 'PatrickEverman',
+    className: 'PatrickEverman',
+    id: 'PatrickEverman',
+  },
   {
     name: 'Patwhatev',
     className: 'Patwhatev',
@@ -66,6 +72,7 @@ class MusicNav extends Component {
 	  		  </div>
   		  <div className="sub-content">
            <Route path={'/music/patwhatev'} component={Patwhatev}/>
+           <Route path={'/music/patrickeverman'} component={PatrickEverman}/>
            <Route path={'/music/bluebird'} component={Bluebird}/>
   		     <Route path={'/music/catcher'} component={Catcher}/>
   		     <Route path={'/music/horses'} component={Horses}/>

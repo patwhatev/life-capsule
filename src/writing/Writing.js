@@ -88,42 +88,6 @@ const albums = [
                         \
                         We took the train home while everybody headed to work in the morning.\
                         ",
-                        "Living the dream: \
-                        \
-                        what’s wrong with millennial today. people say they’re extremely conflicted and stunted in their maturity/growth. that because there are so many options in life they are paralyzed\
-                        \
-                        i used to stare at the guy with the mullet in my hometown neighborhood as a kid, watching him wash his t-bird in a sleeveless shirt and short ass jean shorts listening to gnr. he’s like super into it too, jerking around dancing like he’s practically in the past. he looks so alive.\
-                        \
-                        (acting doesn’t have to be a mirror of mundane reality)\
-                        \
-                        what interests me about watching this person is the parallels to the stage of nostalgia we are in as a culture at the moment. in an age where contemporiety is so discomforting that young people are deciding to turn back to (reprioritize, emphasize) their roots, to their youth, sends a message that there’s a sense of pride in the era that we as a generation were a part of and came from. what’s more is that each story is different;\ \
-                        \
-                        side note: imagining a series about 90s/00s LARPers; what if everyone else stayed contemporary, is there an unblemished replica of the era living today (like the mullet man)? are they walking down orchard ave carrying a duo-shock cd player wearing a tracksuit wearing a high top watching the sopranos wearing DCs playing Tony Hawk’s Pro Skater 2 (GTA III), all unironically, purely because they believe in that er\a\
-                        \
-                    ", "dream\
-                        chinese food \
-                        dog \
-                        dog threw up \
-                        dog knows that other chinese food is bad too \
-                        dog protects back yard \
-                        i let dog bite me \
-                        i want in to the back patio storage \
-                        slobbery unnatractive dog \
-                        \
-                        branchoes \
-                        thidck and birittle\
-                        i gotothe top \
-                        this chick is telling me therere sa hilll down\
-                        so nonchalnat\
-                        \
-                        \
-                        i go to a family reuinion\
-                        im carryinfgg a sihtter aroudn\
-                        like a cross’\
-                        everone is making funnof me \
-                        i go back and forth \
-                        they tell me what to do \
-                        ",
 
                     "WAKING LIFE - 10 YEAR REVIEW\
                         i remember seeing waking life \
