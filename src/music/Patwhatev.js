@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
 
 const albums = [
+                    'https://bandcamp.com/EmbeddedPlayer/album=2619858442/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/',
                     'https://bandcamp.com/EmbeddedPlayer/album=22937234/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/',
                     'https://bandcamp.com/EmbeddedPlayer/album=1528413869/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/',
                     'https://bandcamp.com/EmbeddedPlayer/album=2037392456/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/',
