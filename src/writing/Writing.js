@@ -21,13 +21,13 @@ const albums = [
                         \
                         as I was the tallest I took her body first and laid her down into her resting place. we left her with her belongings, some food, and a basket of feathers.\
                         \
-                        We each grabbed a pinch of cornmeal, Set our last goodbyes and sprinkled it into the grave.\
+                        We each grabbed a pinch of cornmeal, Said our last goodbyes and sprinkled it into the grave.\
                         \
-                        We brushed of the dust from our clothes back into the grave as it is flown up from the wind.\
+                        We brushed off the dust from our clothes back into the grave as it is flown up from the wind.\
                         \
                         we buried her with shovels and then said a blessing.\
                         \
-                        An elder took the decorated pot that held the water used to bath her body and broke it over the mound of dirt as a symbol.\
+                        An elder took the decorated pot that held the water used to bathe her body and broke it over the mound of dirt as a symbol.\
                         \
                         when we return to the house all of the women washed our hands and chanted a prayer to me then we had a large meal together.\
                         \
@@ -53,7 +53,7 @@ const albums = [
                         \
                         a\ll eight of them gathered and sang songs for two hours to guide her soul back home there was laughter\
                         \
-                        we ate food it was like Christmas except my grandma was laying on the ground wrapped in blankets\
+                        we ate food it was like Christmas except my grandma was laying on the ground dead and wrapped in blankets\
                         ",
                         "\
                         Yesterday was my day off.\
