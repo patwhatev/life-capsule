@@ -7,6 +7,8 @@ import {
 import P2017 from "./P2017";
 import P2018 from "./P2018";
 import P2019 from "./P2019";
+import P2023 from "./P2023";
+import P2024 from "./P2024";
 import Paris from "./Paris";
 
 const paper = [
@@ -24,6 +26,16 @@ const paper = [
     name: '2019',
     className: 'P2019',
     id: '2019'
+  },
+  {
+    name: '2023',
+    className: 'P2023',
+    id: '2023'
+  },
+  {
+    name: '2024',
+    className: 'P2024',
+    id: '2024'
   },
   {
     name: 'tv',
@@ -55,6 +67,8 @@ class PhotographsNav extends Component {
            <Route path={'/photos/2017'} component={P2017}/>
            <Route path={'/photos/2018'} component={P2018}/>
            <Route path={'/photos/2019'} component={P2019}/>
+           <Route path={'/photos/2023'} component={P2023}/>
+           <Route path={'/photos/2024'} component={P2024}/>
            <Route path={'/photos/paris'} component={Paris}/>
   		  </div>
         </div>
