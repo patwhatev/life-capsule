@@ -7,13 +7,14 @@ class Home extends Component {
     return (
       <div>
 
-      	<div className="hometext">
+      	<div className="homephoto">
+        <img src={posts.test.photos[0]} alt="" />
+        </div>
+        <div className="hometext">
       		<p>{posts.test.text}</p>
       	</div>
 
-      	<div className="homephoto">
-        <img src={posts.test.photos[0]} alt="" />
-      	</div>
+      	
       </div>
     );
   }
