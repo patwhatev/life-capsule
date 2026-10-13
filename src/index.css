@@ -1,3 +1,18 @@
+html {
+  overflow-x: clip;
+}
+
+:root {
+  /* desktop sidebar: main nav column, then subnav column, then content */
+  --nav-left: 32px;
+  --nav-width: 150px;
+  --subnav-width: 170px;
+  --column-gap: 24px;
+  --subnav-left: calc(var(--nav-left) + var(--nav-width) + var(--column-gap));
+  --content-left: calc(var(--nav-left) + var(--nav-width) + var(--column-gap) * 2);
+  --content-left-sub: calc(var(--subnav-left) + var(--subnav-width) + var(--column-gap) * 2);
+}
+
 body {
   background: #000;
   margin: 0;
@@ -17,15 +32,25 @@ h1, h2, p, ul, li {
 
 .header {
 	position: fixed;
-	left: 0;
+	left: var(--nav-left);
 	top: 120px;
+	width: var(--nav-width);
+	margin: 0;
+	padding: 0;
 }
 
 .subNav {
 	position: fixed;
-	left: 200;
+	left: var(--subnav-left);
 	top: 120px;
+	width: var(--subnav-width);
 	display: block;
+	text-align: left;
+}
+
+.subNav ul {
+	margin: 0;
+	padding: 0;
 }
 
 .subNav li a {
@@ -58,8 +83,15 @@ h1 a:hover {
 }
 
 .content{
-   width: 80%;
-   margin: auto;
+   margin: 0 32px 0 var(--content-left);
+}
+
+.content:has(.subNav) {
+   margin-left: var(--content-left-sub);
+}
+
+.content:has(.boner-pills) {
+   margin-right: 0;
 }
 
 .carousel{
@@ -128,6 +160,28 @@ img {
   width: 100%;
 }
 
+/* soft lazy loading, see FadeImg.jsx */
+.fade-img {
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+
+.fade-img.is-loaded {
+  opacity: 1;
+}
+
+/* hold space for unloaded photos so the page doesn't jump while they arrive */
+.gallery .fade-img:not(.is-loaded),
+.homephoto .fade-img:not(.is-loaded) {
+  aspect-ratio: 3 / 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-img {
+    transition: none;
+  }
+}
+
 .active {
   color: #fff !important;
 }
@@ -179,15 +233,98 @@ img {
     width: 28em;
 }
 
-/*MOBILE SHIT*/
-@media only screen and (max-width: 600px) {
-  .subNav {
-    left: 37%;
+.boner-pills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0;
+  line-height: 0;
+}
+
+.content .boner-pills img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/*MOBILE*/
+/* below ~900px the navs stay fixed and float over full-width content;
+   tighter columns keep nav + subnav side by side within a 360px screen */
+@media only screen and (max-width: 900px) {
+  :root {
+    --nav-left: 16px;
+    --nav-width: 130px;
+    --column-gap: 16px;
+  }
+
+  body h1 {
+    padding: 10px 16px;
+    margin: 0;
+  }
+
+  .subNav li {
+    list-style-type: none;
+  }
+
+  .content,
+  .content:has(.subNav) {
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .sub-content {
+    display: block;
+    padding: 0;
+  }
+
+  .content div img {
+    width: 100%;
   }
 
   .gallery {
-    margin-top: 170px;
+    margin-top: 0;
   }
 
+  .gallery img {
+    padding-bottom: 16px;
+  }
 
+  .gallery iframe {
+    max-width: 100%;
+    margin-top: 0;
+    padding-bottom: 16px;
+  }
+
+  .gallery iframe[width="430"] {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 430 / 249;
+  }
+
+  .gallery-gif img {
+    max-width: 100%;
+    padding: 8px 0;
+  }
+
+  .hometrack, .hometext, .homephoto {
+    width: 100%;
+    padding: 24px 0;
+  }
+
+  .writing {
+    width: 100%;
+    padding: 24px 0;
+  }
+
+  #swa-page {
+    width: auto;
+    padding-top: 24px;
+  }
+
+  .boner-pills {
+    margin: 0 -16px;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  }
 }
